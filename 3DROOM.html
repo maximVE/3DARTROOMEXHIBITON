@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <audio src="midnight-forest-184304.mp3" autoplay loop id="myaudio"></audio>
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@v0.164.1/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@<v0.164.1/examples/jsm/"
+        }
+      }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/20.0.0/tween.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+
+    <!-- HTML elements for textboxes -->
+    <div id="initial-textbox" class="textbox2">
+      <div class="width">
+        <h1 class="secondtitle">Welcome to our 3D Immersive Art Exhibition!</h1>
+        <p class="desciptivitext">
+          Embark on a captivating journey through the intertwining realms of
+          digital artifacts and ancient relics, where the past and present
+          converge in a mesmerizing tapestry of discovery. Traverse through time
+          as you explore the digital archives housing ancient manuscripts and
+          virtual reconstructions of lost civilizations. Witness the tangible
+          remnants of bygone eras, buried beneath the earth or displayed in
+          museums, each carrying the stories of ancient civilizations. Through
+          the marvels of technology, archaeologists breathe new life into these
+          relics, reconstructing shattered artifacts and recreating entire
+          civilizations in stunning detail. As you navigate this immersive
+          world, ponder the timeless questions it raises about human history,
+          the lessons it offers for the future, and the boundless frontiers of
+          digital archaeology awaiting exploration. Click around on the
+          pedestals to<br />
+        </p>
+        <span
+          >Click around on each pedestal to discover more about each individual
+          3D art piece and what its all about!</span
+        >
+      </div>
+    </div>
+
+    <div id="textbox1" class="textbox">
+      <h1>Digital Dexterity: Exploring a 3D Hand Model</h1>
+      <p>
+        Embark on a tactile journey through history with "Grasping the Past."
+        This immersive exhibit unveils a meticulously crafted 3D model of a
+        human hand, offering a gripping exploration of anatomy, evolution, and
+        craftsmanship. As you scrutinize the intricate details of this digital
+        rendition, you are drawn into the evolutionary saga of humanity, from
+        the primordial origins of our species to the dexterity and complexity of
+        modern civilization. Each sinew and joint of the hand tells a story of
+        adaptation, survival, and ingenuity, inviting contemplation on the
+        marvels of the human form. Beyond its anatomical precision, the 3D model
+        of the hand serves as a testament to human creativity and innovation. It
+        showcases the intersection of art and science, highlighting our
+        relentless quest to understand and represent the world around us. Step
+        into "Grasping the Past" and immerse yourself in the tactile wonders of
+        human anatomy and evolution. Let the hand be your guide as you traverse
+        the corridors of time and unravel the mysteries of our shared heritage.
+      </p>
+      <span>March 12, 2023</span>
+    </div>
+    <div id="textbox2" class="textbox">
+      <h1>Divine Visage: Journey into a 3D Model of a Greek God's Head</h1>
+      <p>
+        Embark on a mesmerizing journey through the annals of Greek mythology
+        with "The Legacy of Olympus." This captivating exhibit offers a deep
+        dive into the realms of ancient lore, presenting a meticulously crafted
+        3D model of a Greek god's head. Transport yourself to the hallowed halls
+        of Mount Olympus as you behold the divine visage of these legendary
+        figures, brought to life with stunning detail and authenticity. From the
+        chiseled features that speak of strength and wisdom to the enigmatic
+        gaze that hints at untold stories, every aspect of this digital
+        masterpiece invites exploration and contemplation. Beyond its aesthetic
+        allure, the 3D model of the Greek god's head serves as a conduit to the
+        rich tapestry of ancient culture and belief systems. It offers a glimpse
+        into the minds of the ancients, revealing their reverence for the divine
+        and their aspirations for greatness. As you stand before this digital
+        representation, you are not merely a spectator, but a pilgrim traversing
+        the sacred landscape of myth and legend. Let "The Legacy of Olympus" be
+        your guide as you unravel the mysteries of the ancient world and
+        discover the enduring legacy of its gods.
+      </p>
+      <span>October 5, 2023</span>
+    </div>
+    <div id="textbox3" class="textbox">
+      <h1>
+        Elixir of Antiquity: Exploring a 3D Model of an Ancient Potion Bottle
+      </h1>
+      <p>
+        Embark on a mystical voyage through the corridors of time with "Alchemy
+        Unveiled." This captivating exhibit invites you to explore the enigmatic
+        world of ancient potions and elixirs through a meticulously crafted 3D
+        model of an ancient potion bottle. As you gaze upon the intricate
+        details of this digital relic, you are transported to a bygone era where
+        alchemists sought the keys to immortality and enlightenment. Each curve
+        and contour of the bottle whispers secrets of forgotten formulas and
+        mystical concoctions, tantalizing the imagination and sparking
+        curiosity. Beyond its aesthetic appeal, the 3D model of the ancient
+        potion bottle serves as a portal to a realm where science and magic
+        intertwined. It offers a glimpse into the ingenuity and ambition of
+        ancient civilizations as they sought to unravel the mysteries of the
+        natural world and transcend mortal limitations. Step into "Alchemy
+        Unveiled" and unlock the secrets of the past as you journey through the
+        alchemical traditions of antiquity. Let the ancient potion bottle be
+        your guide as you delve into the realms of mysticism and embark on a
+        quest for knowledge and enlightenment.
+      </p>
+      <span>February 21, 2023</span>
+    </div>
+    <div id="textbox4" class="textbox">
+      <h1>Iconic Legacy: Examining a 3D Model of Stalin's Head</h1>
+      <p>
+        Dive into the tumultuous chapters of history with "Revolutionary
+        Ideals." This thought-provoking exhibit unveils a striking 3D model of
+        Stalin's head, offering a multifaceted exploration of his legacy and
+        impact on the course of human events. As you contemplate the intricacies
+        of this digital portrayal, you are confronted with the complexities of
+        political power and ideology. Stalin's stern visage embodies the
+        aspirations and contradictions of an era marked by revolution and
+        upheaval, inviting reflection on the consequences of absolute authority
+        and totalitarian rule. Beyond its historical significance, the 3D model
+        of Stalin's head serves as a catalyst for dialogue and introspection. It
+        prompts viewers to confront the darker chapters of human history and
+        consider the enduring legacy of ideologies that shaped the twentieth
+        century. Step into "Revolutionary Ideals" and immerse yourself in the
+        tumultuous landscapes of the past. Let Stalin's gaze be your guide as
+        you navigate the intricate web of political intrigue and social upheaval
+        that defined an era.
+      </p>
+      <span>August 10, 2023</span>
+    </div>
+
+    <a id="backButton" href="index.html">Back to Homepage</a>
+
+    <script type="module">
+      import * as THREE from "https://cdn.jsdelivr.net/npm/three@v0.164.1/build/three.module.js";
+      import { OrbitControls } from "https://cdn.jsdelivr.net/npm/three@v0.164.1/examples/jsm/controls/OrbitControls.js";
+      import { GLTFLoader } from "https://cdn.jsdelivr.net/npm/three@v0.164.1/examples/jsm/loaders/GLTFLoader.js";
+
+      // Set up scene, camera, and renderer
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera(
+        75,
+        window.innerWidth / window.innerHeight,
+        0.1,
+        1000
+      );
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+      document.body.appendChild(renderer.domElement);
+
+      // Create floor
+      const floorGeometry = new THREE.PlaneGeometry(20, 20);
+      const floorMaterial = new THREE.MeshStandardMaterial({ color: 0x000000 });
+      const floor = new THREE.Mesh(floorGeometry, floorMaterial);
+      floor.rotation.x = -Math.PI / 2;
+      scene.add(floor);
+
+      // Create ceiling
+      const ceilingGeometry = new THREE.PlaneGeometry(20, 20);
+      const ceilingMaterial = new THREE.MeshStandardMaterial({
+        color: 0x000000,
+      });
+      const ceiling = new THREE.Mesh(ceilingGeometry, ceilingMaterial);
+      ceiling.rotation.x = Math.PI / 2;
+      ceiling.position.y = 5;
+      scene.add(ceiling);
+
+      // Create walls
+      function createWall(position, rotation) {
+        const wallGeometry = new THREE.PlaneGeometry(20, 10); // Increased height to 10 units
+        const wallMaterial = new THREE.MeshStandardMaterial({
+          color: 0x000000,
+        });
+        const wall = new THREE.Mesh(wallGeometry, wallMaterial);
+        wall.position.copy(position);
+        wall.rotation.copy(rotation);
+        wall.position.y = 5; // Adjusted position to half of the wall height
+        scene.add(wall);
+      }
+
+      createWall(new THREE.Vector3(0, 10, -10), new THREE.Euler(0, 0, 0));
+      createWall(new THREE.Vector3(0, 0, 10), new THREE.Euler(0, 0, 0));
+      createWall(
+        new THREE.Vector3(-10, 0, 0),
+        new THREE.Euler(0, Math.PI / 2, 0)
+      );
+      createWall(
+        new THREE.Vector3(10, 0, 0),
+        new THREE.Euler(0, Math.PI / 2, 0)
+      );
+
+      // Add clickable objects
+      const clickableGeometry = new THREE.BoxGeometry(1, 2, 1);
+      const clickableMaterial = new THREE.MeshStandardMaterial({
+        color: 0xffffff,
+      });
+
+      const clickables = [];
+      const clickablePositions = [
+        { x: -7, y: 1, z: 1 },
+        { x: -1.5, y: 1, z: 4 },
+        { x: 1.5, y: 1, z: 6 },
+        { x: 6, y: 1, z: 2 },
+      ];
+
+      clickablePositions.forEach((position) => {
+        const clickable = new THREE.Mesh(clickableGeometry, clickableMaterial);
+        clickable.position.set(position.x, position.y, position.z);
+        scene.add(clickable);
+        clickables.push(clickable);
+      });
+
+      const targetPositions = [
+        new THREE.Vector3(-5.8, 2.5, 3.5), // Target position for the first box (original position)
+        new THREE.Vector3(-0.75, 2.5, 6.5), // Target position for the second box
+        new THREE.Vector3(2.8, 2.5, 8.2), // Target position for the third box
+        new THREE.Vector3(7.5, 2.5, 5), // Target position for the fourth box
+      ];
+
+      // Define scale values for each model
+      const modelScales = [
+        new THREE.Vector3(1.5, 1.5, 1.5), // Scale for the first model
+        new THREE.Vector3(4.0, 4.0, 4.0), // Scale for the second model
+        new THREE.Vector3(4.0, 4.0, 4.0), // Scale for the third model
+        new THREE.Vector3(2.5, 2.5, 2.5), // Scale for the fourth model
+      ];
+
+      // Define rotation values for each model (in radians)
+      const modelRotations = [
+        new THREE.Euler(0, 0, 0), // Rotation for the first model
+        new THREE.Euler(0, Math.PI / 2, 0), // Rotation for the second model
+        new THREE.Euler(0, Math.PI / 1, 0), // Rotation for the third model
+        new THREE.Euler(0, Math.PI, 0), // Rotation for the fourth model
+      ];
+
+      // Define starting heights for each model
+      const startingHeights = [
+        2, // Starting height for the first model
+        2, // Starting height for the second model
+        2.1, // Starting height for the third model
+        3, // Starting height for the fourth model
+      ]; // Load GLTF models
+      const loader = new GLTFLoader();
+      const modelUrls = [
+        "/models/scene.gltf", // Replace with the actual paths to your GLTF models
+        "/models/scene1.gltf",
+        "/models/scene2.gltf",
+        "/models/scene3.gltf",
+      ];
+
+      const models = [];
+
+      modelUrls.forEach((url, index) => {
+        loader.load(url, (gltf) => {
+          const model = gltf.scene;
+          model.scale.copy(modelScales[index]); // Apply individual scale for each model
+          model.rotation.copy(modelRotations[index]); // Apply individual rotation for each model
+
+          // Set individual starting positions slightly above the pedestal
+          model.position.set(
+            clickablePositions[index].x,
+            startingHeights[index], // Individual starting height above the pedestal
+            clickablePositions[index].z
+          );
+
+          scene.add(model);
+          models.push(model);
+
+          // Create animation for the model to move up and down
+          animateModel(model, index);
+        });
+      });
+
+      // Function to animate model up and down
+      function animateModel(model, index) {
+        const initialY = model.position.y;
+        const targetY = initialY + 0.5; // Move up by 1 unit
+        const duration = 2000;
+
+        const tweenUp = new TWEEN.Tween({ y: initialY })
+          .to({ y: targetY }, duration)
+          .easing(TWEEN.Easing.Quadratic.InOut)
+          .onUpdate(function (object) {
+            model.position.y = object.y;
+          })
+          .onComplete(() => {
+            tweenDown.start();
+          });
+
+        const tweenDown = new TWEEN.Tween({ y: targetY })
+          .to({ y: initialY }, duration)
+          .easing(TWEEN.Easing.Quadratic.InOut)
+          .onUpdate(function (object) {
+            model.position.y = object.y;
+          })
+          .onComplete(() => {
+            tweenUp.start();
+          });
+
+        tweenUp.start();
+      }
+
+      // Add lighting
+      const ambientLight = new THREE.AmbientLight(0xffffff, 0.5); // Soft white light
+      scene.add(ambientLight);
+
+      const directionalLight = new THREE.DirectionalLight(0xffffff, 0.5); // White light
+      directionalLight.position.set(1, 2, 4);
+      scene.add(directionalLight);
+
+      // Set camera position
+      camera.position.set(0, 3, 10);
+      camera.lookAt(0, 0, 0);
+
+      // Disable camera controls
+      const controls = new OrbitControls(camera, renderer.domElement);
+      controls.enabled = false;
+
+      // Raycasting for mouse click detection
+      const raycaster = new THREE.Raycaster();
+      const mouse = new THREE.Vector2();
+
+      function onMouseClick(event) {
+        mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
+        mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+        raycaster.setFromCamera(mouse, camera);
+        const intersects = raycaster.intersectObjects(scene.children);
+        const clicked = intersects.find((intersect) =>
+          clickables.includes(intersect.object)
+        );
+        if (clicked) {
+          const index = clickables.indexOf(clicked.object);
+          const targetPosition = targetPositions[index];
+          const initialPosition = camera.position.clone();
+          const duration = 1000;
+
+          const tween = new TWEEN.Tween(initialPosition)
+            .to(targetPosition, duration)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(() => {
+              camera.position.copy(initialPosition);
+            })
+            .start();
+        } else {
+          const targetPosition = new THREE.Vector3(0, 3, 10);
+          const initialPosition = camera.position.clone();
+          const duration = 1000;
+
+          const tween = new TWEEN.Tween(initialPosition)
+            .to(targetPosition, duration)
+            .easing(TWEEN.Easing.Quadratic.InOut)
+            .onUpdate(() => {
+              camera.position.copy(initialPosition);
+            })
+            .start();
+        }
+      }
+
+      // Event listener for mouse click
+      window.addEventListener("click", onMouseClick, false);
+
+      // Function to show/hide the textbox for a pedestal
+      function showTextBox(index) {
+        // Find the position of the pedestal
+        const pedestal = clickables[index];
+        const pedestalPosition = pedestal.position.clone();
+        pedestalPosition.y += 2; // Adjust height if needed
+
+        // Find the corresponding textbox
+        const textBox = document.getElementById(`textbox${index + 1}`);
+
+        // Define different offsets for each pedestal
+        const offsets = [
+          { left: 10, top: 10 }, // Offset for the first pedestal
+          { left: 20, top: 20 }, // Offset for the second pedestal
+          { left: 30, top: 30 }, // Offset for the third pedestal
+          { left: 40, top: 40 }, // Offset for the fourth pedestal
+        ];
+
+        // Get the offset for the current pedestal
+        const offset = offsets[index];
+
+        // Calculate the position of the textbox relative to the pedestal
+        const textBoxX = pedestalPosition.x + offset.left; // Adjust as needed
+        const textBoxZ = pedestalPosition.z + offset.top; // Adjust as needed
+
+        // Convert the coordinates to percentages of the window width and height
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        const leftPercentage = (1 - textBoxX / windowWidth) * 60;
+        const topPercentage = (1 - textBoxZ / windowHeight) * 10;
+
+        // Position the textbox relative to the pedestal
+        textBox.style.left = `${leftPercentage}%`;
+        textBox.style.top = `${topPercentage}%`;
+
+        // Show the textbox
+        textBox.style.display = "block";
+      }
+
+      // Event listener for mouse click
+      window.addEventListener(
+        "click",
+        (event) => {
+          onMouseClick(event);
+          const intersects = raycaster.intersectObjects(scene.children);
+          const clicked = intersects.find((intersect) =>
+            clickables.includes(intersect.object)
+          );
+          if (clicked) {
+            const index = clickables.indexOf(clicked.object);
+            showTextBox(index);
+          } else {
+            // Hide all textboxes if clicked outside of pedestals
+            for (let i = 1; i <= 4; i++) {
+              const textBox = document.getElementById(`textbox${i}`);
+              textBox.style.display = "none";
+            }
+          }
+        },
+        false
+      );
+
+      function hideInitialTextBox() {
+        const initialTextBox = document.getElementById("initial-textbox");
+        initialTextBox.style.display = "none";
+      }
+
+      // Hide the initial textbox after 10 seconds
+      setTimeout(hideInitialTextBox, 30000);
+
+      // Function to hide the initial textbox when clicking outside of it
+      function hideTextBoxOnClickOutside(event) {
+        const initialTextBox = document.getElementById("initial-textbox");
+        if (!initialTextBox.contains(event.target)) {
+          initialTextBox.style.display = "none";
+        }
+      }
+
+      // Event listener for clicks outside the initial textbox
+      document.addEventListener("click", hideTextBoxOnClickOutside);
+
+      // Render loop
+      function animate() {
+        requestAnimationFrame(animate);
+        TWEEN.update();
+        renderer.render(scene, camera);
+      }
+      animate();
+    </script>
+  </body>
+</html>

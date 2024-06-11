@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3D Art Installation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* Additional CSS for the loading screen */
+      #loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        z-index: 1000;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">Welcome on our website</div>
+
+    <!-- Main Content -->
+    <nav class="navbar" id="navbar">
+      <div class="left">
+        <span>MAXIM & LANDO</span>
+      </div>
+      <div class="right">
+        <ul>
+          <li><a href="#scrollto-1">ABOUT</a></li>
+          <li><a href="3DROOM.html">ART</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="centered-text">3D ART INSTALLATION<br />BY LANDO & MAXIM</div>
+    <a href="#scrollto-1">
+      <div class="arrowdown">
+        <img class="arrowpic" src="down-arrow.png" />
+        <span class="arrowdown-title">discover</span>
+      </div>
+    </a>
+
+    <div class="container" id="scrollto-1">
+      <video autoplay="autoplay" muted loop>
+        <source src="Rotating sculpture AdobeStock.mp4" type="video/mp4" />
+      </video>
+      <h2 class="container-title">About</h2>
+      <div class="container-cards">
+        <div class="card">
+          <h3 class="card-title">Concept</h3>
+          <p class="card-text">
+            The Concept we came up with was creating a 3D Art Exhibtion. Created
+            on a simple website. the reason behind this was because Lando &
+            Maxim came up with the idea, based of an inspiration they found when
+            they were exploring different ideas and the stumbled upon ThreeJS
+            and the possibilities that came with ThreeJS. So the concept itself
+            is an Art Exhibition room where u can interact with different 3D Art
+            models.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">ThreeJS</h3>
+          <p class="card-text">
+            So as said in our concept we used ThreeJS to create out Art Room. We
+            wont go in depth on each attribute and how we used it, but to
+            explain shortly. ThreeJS is a javascript pluggin so trough coding u
+            can get a variety of different results. You can animate a variety of
+            different effects but we used it to create our pedestals, make the
+            3D models move up and down and every little animation and effect is
+            all due to JS or ThreeJs. This job was for Maxim.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="card-title">P5</h3>
+          <p class="card-text">
+            We used P5 for the animated background that u can see on our
+            homepage. We went looking for a variety of different interactions
+            and animations that could have made our website more interesting but
+            in the end we landed on this because we felt like it added to the
+            abstract part of our webiste. It also has a tiny hidden interactive
+            feature, in which u can press the "S" button on your homepage and in
+            doing so u will create screenshot. All of the P5 coding and
+            adjustments were lando his job, As also everything u can seen on the
+            home page. For example the intro and interactions.
+          </p>
+        </div>
+        <div class="card spacing">
+          <a href="3DROOM.html">
+            <img src="hihaha.png" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="sketch.js"></script>
+    <script>
+      // JavaScript to toggle navbar visibility
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("navbar").classList.add("hidden"); // Hide navbar initially
+
+        // Show navbar after 3 seconds
+        setTimeout(function () {
+          document.getElementById("navbar").classList.remove("hidden");
+          document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+        }, 3000);
+      });
+    </script>
+  </body>
+</html>
